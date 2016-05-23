@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74D986C7-1FB5-41FF-A36D-97EB52E3EF92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ToDoListApplication.BusinessLayer</RootNamespace>
+    <AssemblyName>ToDoListApplication.BusinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContextManager\ContextManager.cs" />
+    <Compile Include="Entities\Domain.cs" />
+    <Compile Include="Mappers\PersonDataMappingExtentions.cs" />
+    <Compile Include="Mappers\TaskDataMappingExtention.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Person.cs" />
+    <Compile Include="Entities\Task.cs" />
+    <Compile Include="Repositories\Data\IEntityData.cs" />
+    <Compile Include="Repositories\Data\PersonsData.cs" />
+    <Compile Include="Repositories\Data\TasksData.cs" />
+    <Compile Include="Repositories\Implementations\PersonRepository.cs" />
+    <Compile Include="Repositories\Implementations\Repository.cs" />
+    <Compile Include="Repositories\Implementations\TaskRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPersonRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITaskRepository.cs" />
+    <Compile Include="Services\DataContracts\PersonData.cs" />
+    <Compile Include="Services\DataContracts\PersonListData.cs" />
+    <Compile Include="Services\DataContracts\TaskData.cs" />
+    <Compile Include="Services\DataContracts\TaskListData.cs" />
+    <Compile Include="Services\IPersonService.cs" />
+    <Compile Include="Services\ITaskService.cs" />
+    <Compile Include="Services\PersonService.cs" />
+    <Compile Include="Services\TaskService.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

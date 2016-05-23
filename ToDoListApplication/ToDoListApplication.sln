@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListApplication.BusinessLayer", "ToDoListApplication.BusinessLayer\ToDoListApplication.BusinessLayer.csproj", "{74D986C7-1FB5-41FF-A36D-97EB52E3EF92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListApplication.Web", "MvcApplication1\ToDoListApplication.Web.csproj", "{FFB35887-7AF6-44D6-831B-8773780E9DFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74D986C7-1FB5-41FF-A36D-97EB52E3EF92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D986C7-1FB5-41FF-A36D-97EB52E3EF92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D986C7-1FB5-41FF-A36D-97EB52E3EF92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D986C7-1FB5-41FF-A36D-97EB52E3EF92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB35887-7AF6-44D6-831B-8773780E9DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB35887-7AF6-44D6-831B-8773780E9DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB35887-7AF6-44D6-831B-8773780E9DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB35887-7AF6-44D6-831B-8773780E9DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
